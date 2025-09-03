@@ -7,7 +7,7 @@ import Legend from "./components/Legend";
 import "leaflet/dist/leaflet.css";
 
 // ✅ API URL defined here
-export const serverUrl = "http://localhost:8001";
+export const serverUrl = "https://earthquake-backend-rga2.onrender.com";
 
 function App() {
   return (
