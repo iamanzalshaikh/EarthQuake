@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Leaflet CSS overrides */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  z-index: 0 !important; /* keep map behind overlays */
+}
+
+.leaflet-popup {
+  z-index: 1000 !important; /* popups above map tiles */
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 8px;
+}
+
+.leaflet-popup-content {
+  margin: 12px 16px;
+  line-height: 1.5;
+}
+
+/* Custom marker styles */
+.earthquake-marker {
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.earthquake-marker.low {
+  background-color: #22c55e;
+}
+
+.earthquake-marker.moderate {
+  background-color: #f97316;
+}
+
+.earthquake-marker.strong {
+  background-color: #ef4444;
+}
